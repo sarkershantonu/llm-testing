@@ -3,7 +3,7 @@
 - This will show examples of ideas for black-box testing 
 - Basic Testing ideas are applied in LLM scopes
 
-# Text Generation 
+# Text Analysis & Generation 
 
 ### Prompt Testing: General Knowledge 
 
@@ -15,10 +15,16 @@
 
 
 
-# Image Generation: General Knowledge 
+# Image Analysis & Generation : 
+- Medical Domain
+  
+# Audio Analysis & Generation : 
+- Medical Domain 
+# Video Analysis & Generation : 
+- Medical Domain 
+# Decision Making: Actions 
 
-# Audio Generation : 
-
-# Video Generation 
+### Agent Testing : 
+### 
 
 
