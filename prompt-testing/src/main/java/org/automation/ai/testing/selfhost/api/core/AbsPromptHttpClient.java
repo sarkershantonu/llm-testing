@@ -1,4 +1,6 @@
 package org.automation.ai.testing.selfhost.api.core;
 
-public abstract class AbsPromptHttpClient {
+import org.automation.ai.testing.core.LlmApiClient;
+
+public abstract class AbsPromptHttpClient implements LlmApiClient {
 }
