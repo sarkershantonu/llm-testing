@@ -1,4 +1,8 @@
 package org.automation.ai.testing.core;
 
-public class PromptTestBase {
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
+
+@Execution(ExecutionMode.CONCURRENT)
+public abstract class PromptTestBase {
 }
