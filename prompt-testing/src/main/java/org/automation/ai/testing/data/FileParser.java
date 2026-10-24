@@ -1,18 +1,21 @@
 package org.automation.ai.testing.data;
 
-import java.nio.file.Path;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public  class FileParser {
-    private final Path path;
+    private final String fileName;
 
-    public FileParser(Path path) {
-        this.path = path;
-
+    public FileParser(String fileName) {
+        this.fileName = fileName;
     }
-    public FileParser(boolean isInClassPath, Path path) {
-        this.path = path;
-        if(isInClassPath){
 
-        }
+    public String readByClassPath() throws URISyntaxException, IOException {
+        return new String(Files.readAllBytes(
+                Paths.get(getClass().getClassLoader()
+                        .getResource(fileName)
+                        .toURI())));
     }
 }
